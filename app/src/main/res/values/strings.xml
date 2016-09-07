@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LearnAndroid</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>Mela Map</item>
+        <item>Guru Details</item>
+        <item>Mela Videos</item>
+        <item>Mela Events</item>
+        <item>Food</item>
+        <item>Health</item>
+        <item>Emergency</item>
+        <item>Settings</item>
+        <item>About Us</item>
+    </string-array>
+    <string name="title_activity_google_maps">Map</string>
+
+</resources>
