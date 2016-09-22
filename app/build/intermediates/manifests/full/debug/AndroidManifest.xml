@@ -15,8 +15,6 @@
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-    <!-- Include required permissions for Google Mobile Ads to run -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -27,6 +25,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
+        android:name="com.example.akshaykumar.learnandroid.app.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Sangam Mela"
@@ -40,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.akshaykumar.learnandroid.MapsActivity" />
-        <activity android:name="com.example.akshaykumar.learnandroid.DetailsActivity" />
+        <activity android:name="com.example.akshaykumar.learnandroid.InformationActivity" />
         <activity android:name="com.example.akshaykumar.learnandroid.EventsActivity" />
         <activity android:name="com.example.akshaykumar.learnandroid.VideosActivity" />
         <activity android:name="com.example.akshaykumar.learnandroid.MenuActivity" />
@@ -59,7 +58,20 @@
         <activity
             android:name="com.example.akshaykumar.learnandroid.GoogleMapsActivity"
             android:label="@string/title_activity_google_maps" />
+        <activity android:name="com.example.akshaykumar.learnandroid.AkharaaDetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
+        <activity android:name="com.example.akshaykumar.learnandroid.YoutubeVideo" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -68,11 +80,6 @@
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
         <activity
             android:name="com.google.android.gms.appinvite.PreviewActivity"
             android:exported="true"

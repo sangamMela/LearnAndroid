@@ -1,4 +1,4 @@
-package com.example.akshaykumar.learnandroid;
+package com.example.akshaykumar.learnandroid.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.akshaykumar.learnandroid.data.DataModel;
+import com.example.akshaykumar.learnandroid.R;
 
 /**
  * Created by akshaykumar on 8/28/16.

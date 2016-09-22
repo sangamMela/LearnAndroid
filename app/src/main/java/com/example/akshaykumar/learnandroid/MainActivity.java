@@ -1,21 +1,17 @@
 package com.example.akshaykumar.learnandroid;
 
-import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,17 +22,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.common.GoogleApiAvailability;
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
-import com.google.android.gms.common.GooglePlayServicesRepairableException;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.location.places.Place;
-import com.google.android.gms.location.places.ui.PlaceAutocomplete;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
+import com.example.akshaykumar.learnandroid.adapter.DrawerItemCustomAdapter;
+import com.example.akshaykumar.learnandroid.data.DataModel;
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.youtube.player.YouTubeStandalonePlayer;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -49,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
-    android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
+    ActionBarDrawerToggle mDrawerToggle;
 
     static final int NUM_ITEMS = 6;
     int currentPage = 0;
@@ -60,13 +52,17 @@ public class MainActivity extends AppCompatActivity {
     public static final String[] IMAGE_NAME = {"banner1", "banner2", "banner3", "banner4", "banner5", "banner6",};
 
 
-
     LinearLayout mapsMenu;
     LinearLayout videosMenu;
     LinearLayout detailsMenu;
     LinearLayout eventsMenu;
     EditText mLocationAddress;
     TextView mLocationText;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
 
     @Override
@@ -81,10 +77,10 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(imageFragmentPagerAdapter);
 
 
-         mapsMenu = (LinearLayout) findViewById(R.id.mapsMenu);
-         videosMenu = (LinearLayout) findViewById(R.id.videosMenu);
-         detailsMenu = (LinearLayout) findViewById(R.id.detailsMenu);
-         eventsMenu = (LinearLayout) findViewById(R.id.eventsMenu);
+        mapsMenu = (LinearLayout) findViewById(R.id.mapsMenu);
+        videosMenu = (LinearLayout) findViewById(R.id.videosMenu);
+        detailsMenu = (LinearLayout) findViewById(R.id.detailsMenu);
+        eventsMenu = (LinearLayout) findViewById(R.id.eventsMenu);
 
 
         mTitle = mDrawerTitle = getTitle();
@@ -95,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         setupToolbar();
 
 
-       handler = new Handler();
+        handler = new Handler();
         update = new Runnable() {
             public void run() {
                 if (currentPage == NUM_ITEMS) {
@@ -164,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                Intent intent = new Intent(MainActivity.this, VideosActivity.class);
                 startActivity(intent);
 
             }
@@ -175,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                Intent intent = new Intent(MainActivity.this, InformationActivity.class);
                 startActivity(intent);
 
             }
@@ -191,13 +187,60 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "Main Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app deep link URI is correct.
+                Uri.parse("android-app://com.example.akshaykumar.learnandroid/http/host/path")
+        );
+        AppIndex.AppIndexApi.start(client, viewAction);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "Main Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app deep link URI is correct.
+                Uri.parse("android-app://com.example.akshaykumar.learnandroid/http/host/path")
+        );
+        AppIndex.AppIndexApi.end(client, viewAction);
+        client.disconnect();
+    }
 
 
     public static class ImageFragmentPagerAdapter extends FragmentStatePagerAdapter {
+
         public ImageFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
         }
@@ -215,6 +258,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static class SwipeFragment extends Fragment {
+
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
@@ -236,11 +280,17 @@ public class MainActivity extends AppCompatActivity {
             return swipeFragment;
         }
     }
+
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             selectItem(position);
+//            Intent intent = new Intent(MainActivity.this, YoutubeVideo.class);
+//            startActivity(intent);
+
+            startActivity(YouTubeStandalonePlayer.createVideoIntent(MainActivity.this,
+                    "AIzaSyDPgNoQdmeCOx6vb-DNhFlY0wqiFwVRQpU", "mcFmBcC4cPc",0,true,false));
         }
 
     }
@@ -248,7 +298,7 @@ public class MainActivity extends AppCompatActivity {
     private void selectItem(int position) {
         mDrawerList.setItemChecked(position, true);
         mDrawerList.setSelection(position);
-        setTitle(mNavigationDrawerItemTitles[position-1]);
+        setTitle(mNavigationDrawerItemTitles[position - 1]);
         mDrawerLayout.closeDrawers();
 
 
@@ -285,7 +335,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void setupDrawerToggle() {
-        mDrawerToggle = new android.support.v7.app.ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
+        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
         //This is necessary to change the icon of the Drawer Toggle upon state change.
         mDrawerToggle.syncState();
     }

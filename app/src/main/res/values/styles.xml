@@ -43,4 +43,10 @@
         parent="@style/Widget.AppCompat.ActionBar.TabText">
         <item name="android:textColor">@color/actionbar_text</item>
     </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

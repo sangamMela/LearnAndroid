@@ -1,4 +1,4 @@
-package com.example.akshaykumar.learnandroid;
+package com.example.akshaykumar.learnandroid.data;
 
 /**
  * Created by akshaykumar on 8/28/16.

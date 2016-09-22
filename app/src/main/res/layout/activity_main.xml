@@ -117,7 +117,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Guru Details"
+                            android:text="Akharaas"
                             android:id="@+id/textView2"
                             android:layout_weight="0.2"
                             android:background="#FFFF5733"
