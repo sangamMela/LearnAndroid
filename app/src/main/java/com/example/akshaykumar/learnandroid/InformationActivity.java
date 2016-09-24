@@ -1,8 +1,12 @@
 package com.example.akshaykumar.learnandroid;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.android.volley.Cache;
 import com.android.volley.Cache.Entry;
@@ -36,7 +41,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class InformationActivity extends AppCompatActivity {
+public class InformationActivity extends AppCompatActivity implements ConnectivityReceiver.ConnectivityReceiverListener{
 
     private String[] mNavigationDrawerItemTitles;
     private DrawerLayout mDrawerLayout;
@@ -52,6 +57,8 @@ public class InformationActivity extends AppCompatActivity {
     private AkhadaasInformationListAdapter listAdapter;
     private List<AkhadaasInformation> akhadaasInformationList;
     private String URL_FEED = "http://52.37.171.220:8080/sangam/rest/retrieve_akhadaas_information";
+    private ProgressDialog progressDialog;
+    private CoordinatorLayout coordinatorLayout;
 
     @SuppressLint("NewApi")
     @Override
@@ -64,9 +71,12 @@ public class InformationActivity extends AppCompatActivity {
         mNavigationDrawerItemTitles = getResources().getStringArray(R.array.navigation_drawer_items_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        coordinatorLayout = (CoordinatorLayout)findViewById(R.id.coordinatorLayout);
 
         setupToolbar();
+        checkConnection();
 
+        progressDialog = new ProgressDialog(InformationActivity.this);
 
         DataModel[] drawerItem = new DataModel[10];
 
@@ -117,6 +127,19 @@ public class InformationActivity extends AppCompatActivity {
             }
         });
 
+        loadItems();
+
+    }
+
+    private void loadItems(){
+
+        // These two lines not needed,
+        // just to get the look of facebook (changing background color & hiding the icon)
+        // getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3b5998")));
+        // getSupportActionBar().setIcon(
+        //    new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+
+        // We first check for cached request
         Cache cache = AppController.getInstance().getRequestQueue().getCache();
         Entry entry = cache.get(URL_FEED);
         if (entry != null) {
@@ -140,6 +163,7 @@ public class InformationActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     VolleyLog.d(TAG, "Response: " + response.toString());
+                    progressDialog.dismiss();
                     if (response != null) {
                         parseJsonFeed(response);
                     }
@@ -148,12 +172,17 @@ public class InformationActivity extends AppCompatActivity {
 
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.dismiss();
                     VolleyLog.d(TAG, "Error: " + error.getMessage());
                 }
             });
 
             // Adding request to volley request queue
             AppController.getInstance().addToRequestQueue(jsonReq);
+
+            progressDialog.setMessage("Loading...");
+            progressDialog.show();
+
         }
 
 
@@ -247,6 +276,55 @@ public class InformationActivity extends AppCompatActivity {
         mDrawerToggle = new android.support.v7.app.ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
         //This is necessary to change the icon of the Drawer Toggle upon state change.
         mDrawerToggle.syncState();
+    }
+
+
+
+    // Method to manually check connection status
+    private void checkConnection() {
+        boolean isConnected = ConnectivityReceiver.isConnected();
+        showSnack(isConnected);
+    }
+
+    // Showing the status in Snackbar
+    private void showSnack(boolean isConnected) {
+        String message;
+        int color;
+        if (isConnected) {
+            message = "Good! Connected to Internet";
+            color = Color.WHITE;
+        } else {
+            message = "Sorry! Not connected to Internet";
+            color = Color.YELLOW;
+        }
+
+        Snackbar snackbar = Snackbar
+                .make(coordinatorLayout, message, Snackbar.LENGTH_LONG);
+
+        View sbView = snackbar.getView();
+        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+        textView.setTextColor(color);
+        snackbar.show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // register connection status listener
+        AppController.getInstance().setConnectivityListener(this);
+    }
+
+    /**
+     * Callback will be triggered when there is change in
+     * network connection
+     */
+    @Override
+    public void onNetworkConnectionChanged(boolean isConnected) {
+        showSnack(isConnected);
+        if (isConnected){
+            loadItems();
+        }
     }
 
 }

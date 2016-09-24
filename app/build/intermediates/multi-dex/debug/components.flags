@@ -37,10 +37,6 @@
     <init>();
 }
 
--keep class com.example.akshaykumar.learnandroid.MenuActivity {
-    <init>();
-}
-
 -keep class com.example.akshaykumar.learnandroid.GoogleMapsActivity {
     <init>();
 }
@@ -50,6 +46,14 @@
 }
 
 -keep class com.example.akshaykumar.learnandroid.YoutubeVideo {
+    <init>();
+}
+
+-keep class com.example.akshaykumar.learnandroid.TestActivity {
+    <init>();
+}
+
+-keep class com.example.akshaykumar.learnandroid.ConnectivityReceiver {
     <init>();
 }
 

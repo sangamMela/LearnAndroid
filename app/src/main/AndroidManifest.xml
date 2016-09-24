@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".app.AppController"
@@ -29,7 +30,6 @@
         <activity android:name=".InformationActivity" />
         <activity android:name=".EventsActivity" />
         <activity android:name=".VideosActivity" />
-        <activity android:name=".MenuActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -59,6 +59,15 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".YoutubeVideo" />
+        <activity android:name=".TestActivity"></activity>
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

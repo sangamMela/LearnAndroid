@@ -8,24 +8,28 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/bg_parent_rounded_corner.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/menu4.jpg",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/menu4.jpg"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_dark.xml"
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/menu3.png",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/menu3.png"
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_dark.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/connect.png",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/connect.png"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/selecteditem_dot.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/selecteditem_dot.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
@@ -44,12 +48,12 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/rounded_corner_map.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/banner1.jpg",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/banner1.jpg"
-    },
-    {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/settings.png",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/settings.png"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/banner1.jpg",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/banner1.jpg"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/share.png",
@@ -116,6 +120,10 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/white_radius.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/me.relex/circleindicator/1.2.1/res/drawable/white_radius.xml"
+    },
+    {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_dark.xml"
     },
@@ -128,12 +136,20 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_colored_material.xml"
     },
     {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/akharaa_default.jpg",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/akharaa_default.jpg"
+    },
+    {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/glasses.png",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/glasses.png"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/activity_background.png",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/activity_background.png"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
@@ -160,28 +176,32 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/banner6.jpg",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/banner6.jpg"
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/vpi__tab_indicator.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/fr.avianey.com.viewpagerindicator/library/2.4.1.1/res/drawable/vpi__tab_indicator.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/banner6.jpg",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/banner6.jpg"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_edit_text_material.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/placeholder.png",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/placeholder.png"
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/placeholder.png",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/placeholder.png"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/banner5.jpg",
@@ -204,12 +224,12 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/ic_btn_current_location.png"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/menu2.jpg",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/menu2.jpg"
-    },
-    {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/menu2.jpg",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/menu2.jpg"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_dark.xml",
@@ -236,12 +256,20 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/nonselecteditem_dot.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/nonselecteditem_dot.xml"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/menu3.jpg",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/menu3.jpg"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/phone.png",
@@ -252,12 +280,12 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/chat.png"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/fab_background.xml",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/fab_background.xml"
-    },
-    {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_dark.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_mono_dark.xml"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/fab_background.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/fab_background.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/navheader.jpg",
@@ -268,20 +296,20 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_dark.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/banner2.jpg",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/banner2.jpg"
-    },
-    {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_light.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/banner2.jpg",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/banner2.jpg"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/headerbg.jpg",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/headerbg.jpg"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/banner4.jpg",
@@ -292,10 +320,6 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/menu4.png",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/src/main/res/drawable/menu4.png"
-    },
-    {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_light.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_light.xml"
     },
@@ -304,11 +328,11 @@
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
     },
     {
-        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
-        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_dark.xml"
-    },
-    {
         "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_light.xml",
         "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_cast_light.xml"
+    },
+    {
+        "merged": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
+        "source": "/Users/akshaykumar/Desktop/LearnAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_dark.xml"
     }
 ]

@@ -7,10 +7,11 @@
 -keep class com.example.akshaykumar.learnandroid.InformationActivity { <init>(); }
 -keep class com.example.akshaykumar.learnandroid.EventsActivity { <init>(); }
 -keep class com.example.akshaykumar.learnandroid.VideosActivity { <init>(); }
--keep class com.example.akshaykumar.learnandroid.MenuActivity { <init>(); }
 -keep class com.example.akshaykumar.learnandroid.GoogleMapsActivity { <init>(); }
 -keep class com.example.akshaykumar.learnandroid.AkharaaDetailsActivity { <init>(); }
 -keep class com.example.akshaykumar.learnandroid.YoutubeVideo { <init>(); }
+-keep class com.example.akshaykumar.learnandroid.TestActivity { <init>(); }
+-keep class com.example.akshaykumar.learnandroid.ConnectivityReceiver { <init>(); }
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
 -keep class com.google.android.gms.appinvite.PreviewActivity { <init>(); }

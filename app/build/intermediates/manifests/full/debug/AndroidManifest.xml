@@ -42,7 +42,6 @@
         <activity android:name="com.example.akshaykumar.learnandroid.InformationActivity" />
         <activity android:name="com.example.akshaykumar.learnandroid.EventsActivity" />
         <activity android:name="com.example.akshaykumar.learnandroid.VideosActivity" />
-        <activity android:name="com.example.akshaykumar.learnandroid.MenuActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -72,6 +71,15 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name="com.example.akshaykumar.learnandroid.YoutubeVideo" />
+        <activity android:name="com.example.akshaykumar.learnandroid.TestActivity" />
+
+        <receiver
+            android:name="com.example.akshaykumar.learnandroid.ConnectivityReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

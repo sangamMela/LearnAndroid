@@ -40,12 +40,14 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, com.google.android.gms.location.LocationListener {
 
@@ -244,6 +246,41 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 //        LatLng sydney = new LatLng(-34, 151);
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+
+        LatLng pos1 = new LatLng(25.4220, 81.8813);
+        LatLng pos2 = new LatLng(25.4230, 81.8823);
+        LatLng pos3 = new LatLng(25.4240, 81.8833);
+        LatLng pos4 = new LatLng(25.4250, 81.8843);
+        LatLng pos5 = new LatLng(25.4260, 81.8853);
+        LatLng pos6 = new LatLng(25.4270, 81.8863);
+        LatLng pos7 = new LatLng(25.4280, 81.88173);
+        LatLng pos8 = new LatLng(25.4290, 81.8883);
+        LatLng pos9 = new LatLng(25.4220, 81.8893);
+        LatLng pos10 = new LatLng(25.4240, 81.8823);
+        LatLng pos11 = new LatLng(25.4260, 81.8883);
+        LatLng pos12 = new LatLng(25.4290, 81.8887);
+        LatLng pos13 = new LatLng(25.4270, 81.8852);
+
+
+        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(pos6, 15);
+        mMap.animateCamera(yourLocation);
+        mMap.addMarker(new MarkerOptions().position(pos1).title("Shri Panchayati Akhada Mahanirvani").snippet("Location: Sector 1"));
+        mMap.addMarker(new MarkerOptions().position(pos2).title("Shri Panchayati Akhada Niranjani").snippet("Location: Sector 2"));
+        mMap.addMarker(new MarkerOptions().position(pos3).title("Shri Panch Atal Akhada").snippet("Location: Sector 3"));
+        mMap.addMarker(new MarkerOptions().position(pos4).title("Taponidhi Shri Anand Akhada Panchayati").snippet("Location: Sector 4"));
+        mMap.addMarker(new MarkerOptions().position(pos5).title("Shri Panchadashnam Juna Akhada").snippet("Location: Sector 5"));
+        mMap.addMarker(new MarkerOptions().position(pos6).title("Shri Panchadashnam Ahvan Akhada").snippet("Location: Sector 6"));
+        mMap.addMarker(new MarkerOptions().position(pos7).title("Shri Panchadashnam PanchaAgni Akhada").snippet("Location: Sector 7"));
+        mMap.addMarker(new MarkerOptions().position(pos8).title("Shri Digambarani Akhada").snippet("Location: Sector 8"));
+        mMap.addMarker(new MarkerOptions().position(pos9).title("Shri Nirvani Akhada").snippet("Location: Sector 9"));
+        mMap.addMarker(new MarkerOptions().position(pos10).title("Shri Nimrohiani Akhada").snippet("Location: Sector 10"));
+        mMap.addMarker(new MarkerOptions().position(pos11).title("Shri Panchayati Bada Udasin Akhada").snippet("Location: Sector 11"));
+        mMap.addMarker(new MarkerOptions().position(pos12).title("Shri Panchayati Akhada Naya Udasin").snippet("Location: Sector 12"));
+        mMap.addMarker(new MarkerOptions().position(pos13).title("Shri Nirmal Panchayati Akhada").snippet("Location: Sector 13"));
+
+
     }
 
 
@@ -556,44 +593,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-//    @Override
-//    public void onMapReady(GoogleMap googleMap) {
-//        mMap = googleMap;
-//
-//        // Add a marker in Sydney and move the camera
-//        LatLng pos1 = new LatLng(25.4220, 81.8813);
-//        LatLng pos2 = new LatLng(25.4230, 81.8823);
-//        LatLng pos3 = new LatLng(25.4240, 81.8833);
-//        LatLng pos4 = new LatLng(25.4250, 81.8843);
-//        LatLng pos5 = new LatLng(25.4260, 81.8853);
-//        LatLng pos6 = new LatLng(25.4270, 81.8863);
-//        LatLng pos7 = new LatLng(25.4280, 81.88173);
-//        LatLng pos8 = new LatLng(25.4290, 81.8883);
-//        LatLng pos9 = new LatLng(25.4220, 81.8893);
-//        LatLng pos10 = new LatLng(25.4240, 81.8823);
-//        LatLng pos11 = new LatLng(25.4260, 81.8883);
-//        LatLng pos12 = new LatLng(25.4290, 81.8887);
-//        LatLng pos13 = new LatLng(25.4270, 81.8852);
-//
-//
-//        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-//        CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(pos6, 15);
-//        mMap.animateCamera(yourLocation);
-//        mMap.addMarker(new MarkerOptions().position(pos1).title("Shri Panchayati Akhada Mahanirvani").snippet("Location: Sector 1"));
-//        mMap.addMarker(new MarkerOptions().position(pos2).title("Shri Panchayati Akhada Niranjani").snippet("Location: Sector 2"));
-//        mMap.addMarker(new MarkerOptions().position(pos3).title("Shri Panch Atal Akhada").snippet("Location: Sector 3"));
-//        mMap.addMarker(new MarkerOptions().position(pos4).title("Taponidhi Shri Anand Akhada Panchayati").snippet("Location: Sector 4"));
-//        mMap.addMarker(new MarkerOptions().position(pos5).title("Shri Panchadashnam Juna Akhada").snippet("Location: Sector 5"));
-//        mMap.addMarker(new MarkerOptions().position(pos6).title("Shri Panchadashnam Ahvan Akhada").snippet("Location: Sector 6"));
-//        mMap.addMarker(new MarkerOptions().position(pos7).title("Shri Panchadashnam PanchaAgni Akhada").snippet("Location: Sector 7"));
-//        mMap.addMarker(new MarkerOptions().position(pos8).title("Shri Digambarani Akhada").snippet("Location: Sector 8"));
-//        mMap.addMarker(new MarkerOptions().position(pos9).title("Shri Nirvani Akhada").snippet("Location: Sector 9"));
-//        mMap.addMarker(new MarkerOptions().position(pos10).title("Shri Nimrohiani Akhada").snippet("Location: Sector 10"));
-//        mMap.addMarker(new MarkerOptions().position(pos11).title("Shri Panchayati Bada Udasin Akhada").snippet("Location: Sector 11"));
-//        mMap.addMarker(new MarkerOptions().position(pos12).title("Shri Panchayati Akhada Naya Udasin").snippet("Location: Sector 12"));
-//        mMap.addMarker(new MarkerOptions().position(pos13).title("Shri Nirmal Panchayati Akhada").snippet("Location: Sector 13"));
-//
-//    }
 
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {

@@ -28,10 +28,8 @@ import com.example.akshaykumar.learnandroid.data.DataModel;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.youtube.player.YouTubeStandalonePlayer;
 
-import java.util.Timer;
-import java.util.TimerTask;
+import me.relex.circleindicator.CircleIndicator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -77,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(imageFragmentPagerAdapter);
 
 
+        CircleIndicator indicator = (CircleIndicator)findViewById(R.id.indicator);
+        indicator.setViewPager(viewPager);
+
         mapsMenu = (LinearLayout) findViewById(R.id.mapsMenu);
         videosMenu = (LinearLayout) findViewById(R.id.videosMenu);
         detailsMenu = (LinearLayout) findViewById(R.id.detailsMenu);
@@ -91,24 +92,24 @@ public class MainActivity extends AppCompatActivity {
         setupToolbar();
 
 
-        handler = new Handler();
-        update = new Runnable() {
-            public void run() {
-                if (currentPage == NUM_ITEMS) {
-                    currentPage = 0;
-                }
-                viewPager.setCurrentItem(currentPage++, true);
-            }
-        };
-
-
-        new Timer().scheduleAtFixedRate(new TimerTask() {
-
-            @Override
-            public void run() {
-                handler.post(update);
-            }
-        }, 0, 2000);
+//        handler = new Handler();
+//        update = new Runnable() {
+//            public void run() {
+//                if (currentPage == NUM_ITEMS) {
+//                    currentPage = 0;
+//                }
+//                viewPager.setCurrentItem(currentPage++, true);
+//            }
+//        };
+//
+//
+//        new Timer().scheduleAtFixedRate(new TimerTask() {
+//
+//            @Override
+//            public void run() {
+//                handler.post(update);
+//            }
+//        }, 0, 2000);
 
 
         DataModel[] drawerItem = new DataModel[10];
@@ -286,11 +287,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             selectItem(position);
-//            Intent intent = new Intent(MainActivity.this, YoutubeVideo.class);
+//            Intent intent = new Intent(MainActivity.this, TestActivity.class);
 //            startActivity(intent);
 
-            startActivity(YouTubeStandalonePlayer.createVideoIntent(MainActivity.this,
-                    "AIzaSyDPgNoQdmeCOx6vb-DNhFlY0wqiFwVRQpU", "mcFmBcC4cPc",0,true,false));
+//            startActivity(YouTubeStandalonePlayer.createVideoIntent(MainActivity.this,
+//                    "AIzaSyDPgNoQdmeCOx6vb-DNhFlY0wqiFwVRQpU", "mcFmBcC4cPc",0,true,false));
         }
 
     }
